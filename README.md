@@ -23,13 +23,21 @@ Evaluation: Hasil klasifikasi dibandingkan dengan kondisi sebenarnya menggunakan
 **Hasil Pengujian** 
 
 01_HighQuality_Enhanced.jpg.jpeg	7.18%	SIGNATURE PRESENT	SIGNATURE PRESENT
+
 1	02_LowContrast.jpg.jpeg	7.29%	SIGNATURE PRESENT	SIGNATURE PRESENT
+
 2	03_Blurred.jpg.jpeg	11.36%	SIGNATURE PRESENT	SIGNATURE PRESENT
+
 3	04_HighNoise.jpg.jpeg	6.93%	SIGNATURE PRESENT	SIGNATURE PRESENT
+
 4	05_LowResolution_Upsampled.jpg.jpeg	8.56%	SIGNATURE PRESENT	SIGNATURE PRESENT
+
 5	06_Faded_Underexposed.jpg.jpeg	7.31%	SIGNATURE PRESENT	SIGNATURE PRESENT
+
 6	07_ColorShift_WarmTint.jpg.jpeg	7.26%	SIGNATURE PRESENT	SIGNATURE PRESENT
+
 7	08_JPEGCompression_Artifacts.jpg.jpeg	7.43%	SIGNATURE PRESENT	SIGNATURE PRESENT
+
 8	09_CombinedDegradation.jpg.jpeg	8.20%	SIGNATURE PRESENT	SIGNATURE PRESENT
 
 **Analisis dan Kesimpulan** 
