@@ -5,15 +5,19 @@ KELAS : A
 **Alur Pemrosesan (Pipeline)**
 
 Region of Interest (ROI) Cropping: Memotong area pada citra yang menjadi lokasi tanda tangan kepala sekolah sehingga proses analisis hanya dilakukan pada area yang diperlukan.
+
 Grayscale Conversion: Mengubah citra ROI dari citra berwarna (RGB) menjadi citra grayscale untuk menyederhanakan proses pengolahan berdasarkan intensitas piksel.
+
 Thresholding: Mengubah citra grayscale menjadi citra biner untuk memisahkan area tanda tangan (foreground) dari latar belakang (background). Metode yang digunakan meliputi Global Threshold, Otsu Threshold, dan Adaptive Threshold.
-Morphological Operations:
-Opening digunakan untuk mengurangi noise atau piksel kecil yang tidak diperlukan.
-Closing digunakan untuk menutup celah dan menyambungkan bagian tanda tangan yang terputus.
+
+Morphological Operations:Opening digunakan untuk mengurangi noise atau piksel kecil yang tidak diperlukan.Closing digunakan untuk menutup celah dan menyambungkan bagian tanda tangan yang terputus.
+
 Foreground Pixel Calculation: Menghitung jumlah atau persentase piksel foreground pada area ROI sebagai karakteristik untuk menentukan keberadaan tanda tangan.
+
 Classification: Berdasarkan nilai foreground, citra diklasifikasikan menjadi:
 SIGNATURE PRESENT → terdapat tanda tangan.
 SIGNATURE ABSENT → tidak terdapat tanda tangan.
+
 Evaluation: Hasil klasifikasi dibandingkan dengan kondisi sebenarnya menggunakan confusion matrix, accuracy, dan classification report.
 
 **Hasil Pengujian** 
@@ -41,7 +45,7 @@ Evaluation: Hasil klasifikasi dibandingkan dengan kondisi sebenarnya menggunakan
 3. Aturan klasifikasi
    Sistem menggunakan persentase foreground sebagai dasar klasifikasi. Pada notebook, batas klasifikasi yang digunakan adalah 5,0%. Jika persentase foreground ≥ 5,0%, hasil dikategorikan sebagai SIGNATURE PRESENT, sedangkan jika < 5,0%, dikategorikan sebagai SIGNATURE ABSENT. 
 
-Kesimpulan
+**Kesimpulan**
 
 Mini project telah menerapkan ROI cropping, grayscale, Global Threshold, Otsu Threshold, Adaptive Threshold, morphological opening dan closing, perhitungan foreground pixel, serta klasifikasi SIGNATURE PRESENT/ABSENT. Hasil klasifikasi kemudian dievaluasi menggunakan confusion matrix, accuracy, dan classification report. 
 
